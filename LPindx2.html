@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【中小企業診断士の成功メソッド】デジタルマーケティングラボ | DML公式</title>
+    <meta name="description" content="診断士の収益を爆上げするデジタルマーケティングの秘密基地。130名超の診断士が実践するデジマ戦略で、他の診断士と圧倒的な差をつける。案件獲得・人脈構築・専門性向上を一気に実現する唯一のコミュニティ。">
+    <meta name="keywords" content="中小企業診断士,デジタルマーケティング,DML,診断士の稼ぎ方,デジマ,診断士キャリア,集客の出島">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #3182ce 0%, #5a67d8 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial {
+            background-color: #f9fafb;
+            border-left: 4px solid #3182ce;
+        }
+        .cta-button {
+            background: linear-gradient(135deg, #3182ce 0%, #5a67d8 100%);
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(49, 130, 206, 0.4);
+        }
+        .feature-icon {
+            background: #ebf4ff;
+            color: #3182ce;
+        }
+        .step-number {
+            background: #3182ce;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        .section-title:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: #3182ce;
+        }
+        .section-title.centered:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .highlight-box {
+            border: 2px dashed #4299e1;
+            background: rgba(235, 244, 255, 0.7);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #3182ce, #805ad5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+    <!-- 構造化データ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "デジタルマーケティングラボ（DML）",
+      "url": "https://www.shindan.gr.jp/team/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%A9%E3%83%9C/",
+      "logo": "https://www.shindan.gr.jp/wp-content/uploads/2021/01/matsuo-235x300.jpg",
+      "description": "中小企業診断士のためのデジタルマーケティング研究会。130名以上の診断士が参加し、実践的なデジタルマーケティングスキルを習得できるコミュニティ。",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "url": "https://tomatsu-keiei.com/contact-form/",
+        "contactType": "customer support"
+      }
+    }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- ヘッダー -->
+    <header class="gradient-bg text-white sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold flex items-center flex-col">
+                    <div class="flex items-center">
+                        <img src="LOGO_DML.png" alt="DMLロゴ" class="h-8 mr-2">
+                        DML
+                    </div>
+                    <span class="text-yellow-300 text-sm">デジタルマーケティングラボ</span>
+                </h1>
+                <nav>
+                    <ul class="flex space-x-6">
+                        <li><a href="#about" class="hover:underline">DMLとは</a></li>
+                        <li><a href="#benefits" class="hover:underline">入会メリット</a></li>
+                        <li><a href="#activities" class="hover:underline">活動内容</a></li>
+                        
+                        <li><a href="#join" class="hover:underline">参加方法</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <span class="inline-block bg-yellow-400 text-blue-900 px-3 py-1 rounded-full font-bold text-base mb-4">130名以上の診断士が所属！<br>成長し続ける実践コミュニティ</span>
+                <h2 class="text-4xl md:text-5xl font-black leading-tight mb-4">
+                    診断士として<span class="text-yellow-300 text-glow">異次元の飛躍</span>を実現する成功メソッド
+                </h2>
+                <p class="text-xl mb-8">
+                    凡庸な診断士と圧倒的な差をつける<br>
+                    <span class="font-bold underline">デジタルマーケティング戦略</span>を手に入れ<br>
+                    仕事獲得・人脈爆発・専門性確立を一気に実現する
+                </p>
+                <div class="flex flex-col sm:flex-row">
+                    <a href="#join" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 mb-4 sm:mb-0 sm:mr-4 text-center pulse-animation">
+                        参加申し込み
+                    </a>
+                    <a href="#benefits" class="border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-blue-700 transition duration-300 text-center">
+                        なぜDMLなのか？
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <div class="bg-white p-8 rounded-lg shadow-xl relative overflow-hidden">
+
+                    <h3 class="text-gray-800 text-2xl font-bold mb-4">DML<span class="text-blue-600">（デジタルマーケティングラボ）</span></h3>
+                    <ul class="text-gray-700 text-lg">
+                        <li class="flex items-center mb-4">
+                            <span class="bg-blue-100 text-blue-700 rounded-full p-2 mr-3"><i class="fas fa-rocket fa-lg"></i></span>
+                            中小企業診断士130名超が共有する成功へのアプローチ
+                        </li>
+                        <li class="flex items-center mb-4">
+                            <span class="bg-blue-100 text-blue-700 rounded-full p-2 mr-3"><i class="fas fa-bolt fa-lg"></i></span>
+                            自分のコンテンツを持つことで高収入を目指せる可能性
+                        </li>
+                        <li class="flex items-center mb-4">
+                            <span class="bg-blue-100 text-blue-700 rounded-full p-2 mr-3"><i class="fas fa-fire fa-lg"></i></span>
+                            リアル案件で即戦力になるスキルを徹底習得
+                        </li>
+                        <li class="flex items-center">
+                            <span class="bg-blue-100 text-blue-700 rounded-full p-2 mr-3"><i class="fas fa-crown fa-lg"></i></span>
+                            デジマ戦略で他の診断士と圧倒的な差をつける
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 診断士の悩みセクション -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title centered text-3xl font-bold text-center text-gray-800">
+                あなたは今、こんな<span class="text-red-600">苦悩の沼</span>にハマっていませんか？
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8 mt-10">
+                <div class="bg-blue-50 p-6 rounded-lg shadow transition-all duration-300 card-hover border-t-4 border-blue-500">
+                    <div class="rounded-full bg-blue-100 w-16 h-16 flex items-center justify-center mb-4">
+                        <i class="fas fa-search text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">クライアント獲得の迷宮で彷徨う日々</h3>
+                    <p class="text-gray-600">
+                        診断士として活躍したいのに、クライアントを見つける方法が分からず途方に暮れている。個人での営業活動に限界を感じ、案件獲得のブレイクスルーが見つからない。
+                    </p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow transition-all duration-300 card-hover border-t-4 border-blue-500">
+                    <div class="rounded-full bg-blue-100 w-16 h-16 flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">孤独な戦士症候群に陥っている</h3>
+                    <p class="text-gray-600">
+                        診断士としての道を歩み始めたものの、共に高め合える戦友がいない。本音で語り合い、切磋琢磨できる仲間を求めている。
+                    </p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow transition-all duration-300 card-hover border-t-4 border-blue-500">
+                    <div class="rounded-full bg-blue-100 w-16 h-16 flex items-center justify-center mb-4">
+                        <i class="fas fa-question text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">診断士アイデンティティ迷子状態</h3>
+                    <p class="text-gray-600">
+                        難関試験に合格したものの、何を専門にして活動すべきか道筋が見えない。診断士としての独自のポジションが確立できず、先が見えない不安に苛まれている。
+                    </p>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 mt-8">
+                <div class="bg-blue-50 p-6 rounded-lg shadow transition-all duration-300 card-hover border-t-4 border-blue-500">
+                    <div class="rounded-full bg-blue-100 w-16 h-16 flex items-center justify-center mb-4">
+                        <i class="fas fa-award text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">実務ポイント獲得の焦燥感に襲われる</h3>
+                    <p class="text-gray-600">
+                        診断士資格維持のための実務ポイント獲得に頭を悩ませている。「このまま更新できないのでは？」という不安が日々増大している。
+                    </p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow transition-all duration-300 card-hover border-t-4 border-blue-500">
+                    <div class="rounded-full bg-blue-100 w-16 h-16 flex items-center justify-center mb-4">
+                        <i class="fas fa-laptop text-blue-600 text-2xl"></i>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">デジマスキル空白地帯から脱出できない</h3>
+                    <p class="text-gray-600">
+                        時代の最前線を行くデジタルマーケティングスキルが欠如し、価値提供に限界を感じている。体系的に学ぶ環境がなく、独学の迷宮から抜け出せない状態が続いている。
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-blue-100 p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">こんな悩みを<span class="text-red-600">一気に解決</span>するには...</h3>
+                <p class="text-lg text-gray-700">DMLは単なる勉強会ではなく、診断士としての<span class="font-bold">確実な成功へと導く実践的コミュニティ</span>です。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DMLとは -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 md:pr-8 mb-8 md:mb-0">
+                    <span class="inline-block bg-yellow-400 text-blue-900 px-3 py-1 rounded-full font-bold text-sm mb-2">2021年設立 130名超が認めた効果</span>
+                    <h2 class="section-title text-3xl font-bold text-gray-800">
+                        DMLとは
+                    </h2>
+                    <p class="mb-4 text-gray-700">
+                        <span class="font-bold text-blue-600">「中小企業にデジタルマーケティングを革命的に浸透させる」</span>をミッションに、診断士が中小企業の売上を<span class="font-bold underline">確実に倍増させる力</span>を育成するプロフェッショナル集団です。
+                    </p>
+                    <p class="mb-4 text-gray-700">
+                        2021年1月に設立以来、わずか3年で<span class="font-bold">130名以上の中小企業診断士が参加</span>するコミュニティに急成長。独立・企業内を問わず、多様なバックグラウンドを持つ診断士たちがデジタルマーケティングを武器に、圧倒的な実績を積み上げています。
+                    </p>
+                    <p class="mb-4 text-gray-700">
+                        DMLは知識だけの空虚な勉強会ではなく、<span class="font-bold bg-yellow-100 px-1">実際の中小企業支援を通じて稼げるスキルを身につける場</span>です。理論と実践を融合させた実践プラットフォームで、リアルなビジネス現場でのデジタルマーケティング力を鍛え上げます。
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white rounded-lg shadow-xl p-6 transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">なぜ今<span class="text-red-600">デジタルマーケティング</span>なのか？</h3>
+                        <ul class="space-y-4 text-gray-700">
+                            <li class="flex items-start">
+                                <span class="text-blue-600 mr-2 mt-1"><i class="fas fa-chart-line"></i></span>
+                                <span>デジタル広告費が<span class="font-bold">テレビ広告費を超える時代</span>に突入し、マーケティング戦略の中心軸が完全シフト</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-600 mr-2 mt-1"><i class="fas fa-virus"></i></span>
+                                <span>コロナ禍で<span class="font-bold">デジタル化の波に乗り遅れた企業が次々と淘汰</span>される現実が中小企業にも波及</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-600 mr-2 mt-1"><i class="fas fa-store"></i></span>
+                                <span>中小企業経営者の<span class="font-bold">最大の悩みである「売上不振」を直撃解決</span>できるスキルとして注目度急上昇</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-600 mr-2 mt-1"><i class="fas fa-user-tie"></i></span>
+                                <span>多くの中小企業が<span class="font-bold">デジタルマーケティングに踏み出したいが社内に人材が皆無</span>という空白地帯が拡大</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-600 mr-2 mt-1"><i class="fas fa-bullseye"></i></span>
+                                <span>大手広告代理店は<span class="font-bold">予算の小さい中小企業を相手にしない</span>ため、診断士の活躍余地が無限大</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border-l-4 border-blue-500">
+                            <p class="font-bold text-blue-700">
+                                診断士がデジタルマーケティングスキルを習得することで<span class="text-red-600">クライアントの売上を拡大し、自身の案件獲得も急増</span>できる絶好の機会です。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title centered text-3xl font-bold text-center text-gray-800">
+                DMLに入会するメリット
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg shadow transition-all duration-300 card-hover border-t-4 border-blue-500">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">仕事獲得の可能性</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                            各種研究会を通じた実際の案件への参画機会
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                            メンバー間での案件紹介やコラボレーション
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                            実践経験を通じた資格更新ポイントの獲得
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                            他のマーケティング案件の獲得にも役立つ専門性の習得
+                        </li>
+                    </ul>
+                    <div class="mt-6">
+                        <p class="italic text-sm text-gray-600">
+                            「DMLに入会して集客の出島の案件に参加したことで、初めての診断士としての仕事を獲得できました。」
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg shadow transition-all duration-300 card-hover border-t-4 border-blue-500">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">人脈形成・仲間づくり</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                            130名以上の診断士とのネットワーク構築
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                            多様なバックグラウンドを持つメンバーとの交流
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                            読書会やSlackでの日常的な情報交換
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                            リアル・オンラインでの親睦イベント
+                        </li>
+                    </ul>
+                    <div class="mt-6">
+                        <p class="italic text-sm text-gray-600">
+                            「診断士になって知り合いが少なかったが、DMLに入会してから志を同じくする仲間ができ、孤独感がなくなりました。」
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg shadow transition-all duration-300 card-hover border-t-4 border-blue-500">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">体系的な学びと実践</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                            SEO・コンテンツマーケティング・SNS・広告運用などの体系的学習
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                            デジタルマーケティングマニュアル（全23巻）の活用
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                            著名な業界実務家による特別講演会
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                            自身のブログ・SNSの改善にも役立つ実践的知識
+                        </li>
+                    </ul>
+                    <div class="mt-6">
+                        <p class="italic text-sm text-gray-600">
+                            「独学では得られない体系的な知識と実践方法を学ぶことができました。今では自分のブログも運営できています。」
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg shadow transition-all duration-300 card-hover border-t-4 border-blue-500">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">診断士としての専門性確立</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                            デジタルマーケティングの専門家としての差別化
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                            中小企業・小規模事業者の「仮想CMO」としての活躍
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                            診断士スキルとデジタルマーケティングを組み合わせた独自の強み構築
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                            実績を通じた自信の獲得とキャリアパスの明確化
+                        </li>
+                    </ul>
+                    <div class="mt-6">
+                        <p class="italic text-sm text-gray-600">
+                            「診断士になって何をすればいいか悩んでいましたが、DMLでデジマを学んだことで自分の専門分野を見つけられました。」
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 活動内容 -->
+    <section id="activities" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <span class="inline-block bg-yellow-400 text-blue-900 px-3 py-1 rounded-full font-bold text-sm mb-2 mx-auto text-center block w-fit">他にはない充実の活動システム</span>
+            <h2 class="section-title centered text-3xl font-bold text-center text-gray-800">
+                成長の突破口となる<span class="gradient-text">5つの活動内容</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-white p-6 rounded-lg shadow-xl transition-all duration-300 card-hover border-t-4 border-blue-500 relative">
+                    <div class="absolute -top-4 -right-4 bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center text-xl font-bold">1</div>
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-chalkboard-teacher text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">超実践型定例会</h3>
+                    <p class="text-gray-700 mb-4">毎月第4土曜日に開催する最先端のデジマを学ぶ場。SEO・コンテンツマーケティング・SNS戦略など即実践できる内容を厳選して提供。</p>
+                    <p class="text-sm font-bold text-blue-600">※オンライン参加可能で全国から参加可能。録画視聴も可能で見逃し防止！</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-xl transition-all duration-300 card-hover border-t-4 border-blue-500 relative">
+                    <div class="absolute -top-4 -right-4 bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center text-xl font-bold">2</div>
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-book-reader text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">超効率読書会</h3>
+                    <p class="text-gray-700 mb-4">月2回開催の少人数制読書会。ベストセラーから専門書まで、1冊を複数人で分担して読むことで、短時間で多くの本の知識を吸収できる仕組み。</p>
+                    <p class="text-sm font-bold text-blue-600">※Slackで開催案内。気軽に参加でき、人脈構築の場としても大好評！</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-xl transition-all duration-300 card-hover border-t-4 border-blue-500 relative">
+                    <div class="absolute -top-4 -right-4 bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center text-xl font-bold">3</div>
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-user-tie text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">一流講師陣による特別講演</h3>
+                    <p class="text-gray-700 mb-4">業界最前線で活躍するマーケターを招いた特別講演会。通常なら10万円以上するセミナー内容を会員特典として提供。</p>
+                    <p class="text-sm font-bold text-blue-600">※過去にマーケティングトレース主宰・黒澤友貴氏など著名人を招聘！</p>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-xl transition-all duration-300 card-hover border-t-4 border-blue-500 relative">
+                    <div class="absolute -top-4 -right-4 bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center text-xl font-bold">4</div>
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-briefcase text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">実践的なプロジェクト紹介</h3>
+                    <p class="text-gray-700 mb-4">実際の中小企業支援に参画できる実践部門。理論だけでなく実績と収益を同時に獲得できる診断士のための研究会
+
+                    </p>
+                    <ul class="text-gray-700 list-disc pl-5 mb-4 space-y-1">
+                        <li><span class="font-bold">飲食店売上3倍化プロジェクト</span>（EC×SNS戦略）</li>
+                        <li><span class="font-bold">伝統工芸ECモール立ち上げ</span>（0→月商1000万円達成）</li>
+                        <li><span class="font-bold">リフォーム会社集客改革</span>（問合せ数5倍増）</li>
+                        <li><span class="font-bold">工務店コンテンツマーケティング</span>（年間2000万円の案件創出）</li>
+                        <li>他多数の<span class="text-red-600 font-bold">成功事例を続々と生み出しています</span></li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-xl transition-all duration-300 card-hover border-t-4 border-blue-500 relative">
+                    <div class="absolute -top-4 -right-4 bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center text-xl font-bold">5</div>
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-comments text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">24時間相談可能な<span class="text-red-600">「秘密基地」</span>Slack</h3>
+                    <p class="text-gray-700 mb-4">会員専用のオンラインコミュニティで、いつでもどこでも質問・相談・情報交換が可能。孤独な戦いをする診断士の強力なバックアップ体制。</p>
+                    <ul class="text-gray-700 list-disc pl-5 mb-4 space-y-1">
+                        <li><span class="font-bold">最新デジマトレンド</span>をリアルタイムでキャッチ</li>
+                        <li>各種ツールの<span class="font-bold">使い方を即アドバイス</span></li>
+                        <li>メンバー間での<span class="font-bold">案件紹介が日常的に発生</span></li>
+                        <li>自分のウェブサイトや<span class="font-bold">コンテンツへのフィードバック</span>が即得られる</li>
+                        <li><span class="text-red-600 font-bold">診断士としての孤独感から完全に解放される環境</span></li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+    <!-- メンバーの声 -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title centered text-3xl font-bold text-center text-gray-800">
+                メンバーの声
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="testimonial p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="rounded-full bg-blue-100 w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">T.S さん（40代・独立診断士）</h4>
+                            <p class="text-gray-600 text-sm">DML入会：2022年</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        「独立後、デジタルマーケティングの専門性を身につけたいと思っていました。DMLに入会して1年で、SEOやコンテンツマーケティングの基礎を学び、自分のWebサイトへの集客が3倍になりました。また、集客の出島を通じて初めての案件も獲得でき、診断士としての自信につながりました。」
+                    </p>
+                </div>
+                <div class="testimonial p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="rounded-full bg-blue-100 w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">M.K さん（30代・企業内診断士）</h4>
+                            <p class="text-gray-600 text-sm">DML入会：2021年</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        「企業内診断士として、副業で診断士活動をしたいと考えていました。時間の限られた中でも価値を提供できるデジタルマーケティングスキルを身につけたく、DMLに入会。読書会や定例会を通じて多くの仲間ができ、一人では続かなかった学習も継続できています。今では自社でもデジタルマーケティングの知見を活かせるようになり、キャリアアップにつながりました。」
+                    </p>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 mt-8">
+                <div class="testimonial p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="rounded-full bg-blue-100 w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Y.N さん（50代・独立診断士）</h4>
+                            <p class="text-gray-600 text-sm">DML入会：2023年</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        「長年の経営コンサルタントとしての経験がありましたが、デジタル分野に苦手意識がありました。DMLでは初心者でも分かりやすい形で学べる環境があり、少しずつデジタルマーケティングを理解できるようになりました。今では既存のクライアントにデジタルマーケティングの提案もできるようになり、サービスの幅が広がりました。」
+                    </p>
+                </div>
+                <div class="testimonial p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="rounded-full bg-blue-100 w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">H.S さん（20代・新人診断士）</h4>
+                            <p class="text-gray-600 text-sm">DML入会：2023年</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        「診断士試験に合格したものの、どのように活動していけばいいのか全く見当がつきませんでした。松尾さんのYouTubeを見てDMLに興味を持ち、入会。先輩診断士の活動を間近で見ることができ、自分の進むべき道が少しずつ見えてきました。様々なバックグラウンドを持つメンバーとの交流は、自分だけでは得られない貴重な学びになっています。」
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 入会方法 -->
+    <section id="join" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title centered text-3xl font-bold text-center text-gray-800">
+                入会方法
+            </h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-blue-50 p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">DMLへの入会は3ステップで完了します</h3>
+                    
+                    <div class="mb-8 flex items-start">
+                        <div class="step-number">1</div>
+                        <div>
+                            <h4 class="font-bold text-xl text-gray-800 mb-2">中小企業政策研究会に入会する</h4>
+                            <p class="text-gray-700 mb-3">まずは「中小企業政策研究会」の会員になる必要があります。下記リンクから入会申込手続きを行ってください。</p>
+                            <a href="https://www.shindan.gr.jp/entry/" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded">
+                                入会申込フォームへ
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8 flex items-start">
+                        <div class="step-number">2</div>
+                        <div>
+                            <h4 class="font-bold text-xl text-gray-800 mb-2">DMLリーダーへ連絡</h4>
+                            <p class="text-gray-700 mb-3">中小企業政策研究会への入会完了後、DMLリーダーの松尾氏が運営するブログの問い合わせページより、「デジタルマーケティングラボ入会希望」の旨をお伝えください。</p>
+                            <a href="https://tomatsu-keiei.com/contact-form/" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded">
+                                問い合わせフォームへ
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6 flex items-start">
+                        <div class="step-number">3</div>
+                        <div>
+                            <h4 class="font-bold text-xl text-gray-800 mb-2">Slack招待メール受信</h4>
+                            <p class="text-gray-700">入会希望の連絡を送付いただいた時点で入会手続きは完了です。松尾氏よりSlack招待メールが送信され、DMLコミュニティへの参加が可能になります。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
+                        <h4 class="font-bold text-gray-800 mb-2">見学希望の方へ</h4>
+                        <p class="text-gray-700">
+                            入会前に定例会を見学することも可能です（1回のみ）。見学希望の場合も上記の問い合わせフォームから「DML定例会見学希望」とご連絡ください。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-6">あなたも診断士としての新たな可能性を開きませんか？</h3>
+                    <a href="https://www.shindan.gr.jp/entry/" class="cta-button inline-block text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg">
+                        今すぐDMLに入会する
+                    </a>
+                    <p class="mt-4 text-gray-600">
+                        ※まずは見学からでも歓迎します。お気軽にお問い合わせください。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 代表者紹介 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <span class="inline-block bg-yellow-400 text-blue-900 px-3 py-1 rounded-full font-bold text-sm mb-2 mx-auto text-center block w-fit">メンバー</span>
+            <h2 class="section-title centered text-3xl font-bold text-center text-gray-800">
+                代表者紹介
+            </h2>
+            <div class="flex flex-col md:flex-row items-center md:items-start bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-8 shadow-xl">
+                <div class="md:w-1/4 mb-6 md:mb-0 md:mr-8">
+                    <div class="w-48 h-48 mx-auto rounded-full overflow-hidden shadow-xl border-4 border-white">
+                        <img src="https://www.shindan.gr.jp/wp-content/uploads/2021/01/matsuo-235x300.jpg" alt="松尾知明氏" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="md:w-3/4">
+                    <div class="bg-blue-600 text-white inline-block px-4 py-1 rounded-full text-sm font-bold mb-2">中小企業のデジタルマーケティング支援を牽引する診断士</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">松尾 知明</h3>
+                    <p class="text-blue-600 font-semibold mb-4">株式会社ナレッジ・ハブ 代表取締役 / 中小企業診断士</p>
+                    <p class="text-gray-700 mb-4">
+                        東京工業大学大学院修了。日揮株式会社でプロジェクト統括PMとして戦略構築・設備投資・調達・マーケティングを主導。<span class="font-bold">多数の中小企業のデジタルマーケティング戦略を成功に導き、売上を倍増させる実績</span>を次々と生み出す。
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        2020年に中小企業診断士資格を取得後、<span class="font-bold">クライアントの組織・財務状況・事業フェーズに合わせた「地に足のついた」デジタルマーケティング支援</span>
+
+                        <i class="fas fa-bolt mr-2"></i>今すぐDMLに参加する
+                    </a>
+                    <p class="mt-6 text-gray-600 font-bold">
+                        ※まずは気軽に見学からスタートも歓迎します<br>
+                        <span class="text-blue-600">診断士としての未来を変える一歩を今踏み出しましょう</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <span class="inline-block bg-yellow-400 text-blue-900 px-3 py-1 rounded-full font-bold text-sm mb-2 mx-auto text-center block w-fit">よくある質問と回答</span>
+            <h2 class="section-title centered text-3xl font-bold text-center text-gray-800">
+                <span class="gradient-text">Q&A</span>
+            </h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-lg shadow-xl p-6 mb-6 hover:shadow-2xl transition-all duration-300 border-l-4 border-blue-500">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center">
+                        <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3">Q</span>
+                        デジタルマーケティング初心者でも参加できますか？
+                    </h3>
+                    <div class="flex">
+                        <span class="bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 flex-shrink-0">A</span>
+                        <p class="text-gray-700">
+                            <span class="font-bold text-blue-600">大歓迎です！</span> DMLメンバーの約80%はデジタルマーケティング初心者からスタートしています。「超初心者でも挫折しない」をモットーに、基礎から体系的に学べるよう設計されています。松尾氏自身も実務未経験から学び始め、今や第一線で活躍するまでの道のりを凝縮したカリキュラムを提供しています。
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-xl p-6 mb-6 hover:shadow-2xl transition-all duration-300 border-l-4 border-blue-500">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center">
+                        <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3">Q</span>
+                        地方在住ですが参加するメリットはありますか？
+                    </h3>
+                    <div class="flex">
+                        <span class="bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 flex-shrink-0">A</span>
+                        <p class="text-gray-700">
+                            <span class="font-bold text-blue-600">地方会員こそ大きなメリットがあります！</span> 全ての定例会はオンラインで参加可能で、録画アーカイブも用意。Slackでの24時間質問対応で地理的ハンデはありません。むしろ、地方では競合する診断士が少ないため、デジマスキルを身につければ「地域唯一のデジマエキスパート」として圧倒的な差別化が可能です。実際に北海道から沖縄まで全国から会員が参加しています。
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-xl p-6 mb-6 hover:shadow-2xl transition-all duration-300 border-l-4 border-blue-500">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center">
+                        <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3">Q</span>
+                        企業内診断士でも活動に参加できますか？時間が取れるか不安です
+                    </h3>
+                    <div class="flex">
+                        <span class="bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 flex-shrink-0">A</span>
+                        <p class="text-gray-700">
+                            <span class="font-bold text-blue-600">企業内診断士が約40%を占める</span>活発なコミュニティです。定例会は土曜開催で録画視聴も可能。Slackでの情報交換は時間を選ばず、通勤中や昼休みなど「スキマ時間」で参加できます。企業内診断士の多くは、副業や転職に向けたスキル習得、あるいは本業でのキャリアアップのためにDMLを活用しています。「時間効率の最大化」がDMLの強みです。
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-xl p-6 mb-6 hover:shadow-2xl transition-all duration-300 border-l-4 border-blue-500">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center">
+                        <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3">Q</span>
+                        自分のブログやSNSを持っていませんが大丈夫ですか？
+                    </h3>
+                    <div class="flex">
+                        <span class="bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 flex-shrink-0">A</span>
+                        <p class="text-gray-700">
+                            <span class="font-bold text-blue-600">何も持っていなくても問題ありません！</span> むしろDML入会後に自分のメディアを立ち上げるメンバーが大多数です。「ゼロからのWebサイト構築」「SNSアカウント育成法」などの基礎講座も用意されており、先輩メンバーのサポートを受けながら自分のメディアを育てていくことができます。「何も持っていない状態」からの成長プロセスも含めて学べる環境です。
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-xl p-6 hover:shadow-2xl transition-all duration-300 border-l-4 border-blue-500">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center">
+                        <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3">Q</span>
+                        入会費や年会費はいくらかかりますか？
+                    </h3>
+                    <div class="flex">
+                        <span class="bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 flex-shrink-0">A</span>
+                        <p class="text-gray-700">
+                            <span class="font-bold text-blue-600">DML自体の会費は不要</span>です。中小企業政策研究会への入会が必要で、入会金3,000円、年会費6,000円がかかります。これはDMLだけでなく、政策研究会の他の研究会（13研究会以上）にも自由に参加できる会費です。同様のデジマ講座を受講すると通常10万円以上するところ、<span class="font-bold text-red-600">年間たった6,000円で130名以上の診断士ネットワークと専門知識が手に入る</span>コストパフォーマンスの高さが魅力です。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最終CTA -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-black mb-6">診断士として<span class="text-yellow-300 animate-pulse">圧倒的な差</span>をつける</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                130名以上の診断士が実証する成功メソッドで、あなたも診断士としての価値を最大化しませんか？
+            </p>
+            <a href="https://www.shindan.gr.jp/entry/" class="cta-button inline-block text-white font-bold py-5 px-12 rounded-full text-2xl shadow-2xl pulse-animation">
+                今すぐDMLに参加する
+            </a>
+            <p class="mt-6 text-sm">
+                ※まずは見学から始めることも可能です。お気軽にお問い合わせください。
+            </p>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-4">デジタルマーケティングラボ</h3>
+                    <p class="mb-4 max-w-md">
+                        デジタルマーケティングラボ（DML）は、中小企業診断士のためのデジタルマーケティング研究会です。
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">関連リンク</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="https://www.shindan.gr.jp/team/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%A9%E3%83%9C/" class="hover:text-blue-300" target="_blank">
+                                <i class="fas fa-external-link-alt mr-2"></i>政策研究会 DML公式ページ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://tomatsu-keiei.com/digital-marketing-lab-kickoff/" class="hover:text-blue-300" target="_blank">
+                                <i class="fas fa-history mr-2"></i>DML設立ストーリー
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://syukyaku-digima.com/" class="hover:text-blue-300" target="_blank">
+                                <i class="fas fa-briefcase mr-2"></i>集客の出島（実践プラットフォーム）
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@marketing-komon" class="hover:text-blue-300" target="_blank">
+                                <i class="fab fa-youtube mr-2"></i>マーケティング顧問チャンネル
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-700 text-center">
+                <p>デジタルマーケティングラボ（DML） All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 固定CTA -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="#join" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full shadow-xl flex items-center transform hover:scale-105 transition-all">
+            <i class="fas fa-rocket mr-2"></i> 今すぐ参加
+        </a>
+    </div>
+</body>
+</html>
