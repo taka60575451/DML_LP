@@ -117,14 +117,60 @@
                     </div>
                     <span class="text-yellow-300 text-sm">デジタルマーケティングラボ</span>
                 </h1>
-                <nav>
+                
+                <!-- PC用ナビゲーション -->
+                <nav class="hidden md:block">
                     <ul class="flex space-x-6">
-                        <li class="mb-2 md:mb-0"><a href="#about" class="block md:inline-block hover:underline bg-orange-500 bg-opacity-30 px-3 py-1 rounded-full border-2 border-orange-500 text-center">DMLとは</a></li>
-                        <li class="mb-2 md:mb-0"><a href="#benefits" class="block md:inline-block hover:underline bg-orange-500 bg-opacity-30 px-3 py-1 rounded-full border-2 border-orange-500 text-center">入会メリット</a></li>
-                        <li class="mb-2 md:mb-0"><a href="#activities" class="block md:inline-block hover:underline bg-orange-500 bg-opacity-30 px-3 py-1 rounded-full border-2 border-orange-500 text-center">活動内容</a></li>                       
-                        <li class="mb-2 md:mb-0"><a href="#join" class="block md:inline-block hover:underline bg-orange-500 bg-opacity-30 px-3 py-1 rounded-full border-2 border-orange-500 text-center">参加方法</a></li>
+                        <li><a href="#about" class="hover:underline bg-orange-500 bg-opacity-30 px-3 py-1 rounded-full border-2 border-orange-500">DMLとは</a></li>
+                        <li><a href="#benefits" class="hover:underline bg-orange-500 bg-opacity-30 px-3 py-1 rounded-full border-2 border-orange-500">入会メリット</a></li>
+                        <li><a href="#activities" class="hover:underline bg-orange-500 bg-opacity-30 px-3 py-1 rounded-full border-2 border-orange-500">活動内容</a></li>                       
+                        <li><a href="#join" class="hover:underline bg-orange-500 bg-opacity-30 px-3 py-1 rounded-full border-2 border-orange-500">参加方法</a></li>
                     </ul>
                 </nav>
+
+                <!-- モバイル用メニューボタン -->
+                <button class="md:hidden text-white" onclick="toggleMenu()">
+                    <i class="fas fa-bars fa-2x"></i>
+                </button>
+
+                <!-- モバイル用ナビゲーション -->
+                <nav id="mobile-menu" class="fixed top-0 right-0 w-64 h-full bg-blue-900 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+                    <div class="p-6">
+                        <button class="text-white mb-8" onclick="toggleMenu()">
+                            <i class="fas fa-times fa-2x"></i>
+                        </button>
+                        <ul class="space-y-4">
+                            <li><a href="#about" class="block text-white hover:underline bg-orange-500 bg-opacity-30 px-3 py-1 rounded-full border-2 border-orange-500 text-center">DMLとは</a></li>
+                            <li><a href="#benefits" class="block text-white hover:underline bg-orange-500 bg-opacity-30 px-3 py-1 rounded-full border-2 border-orange-500 text-center">入会メリット</a></li>
+                            <li><a href="#activities" class="block text-white hover:underline bg-orange-500 bg-opacity-30 px-3 py-1 rounded-full border-2 border-orange-500 text-center">活動内容</a></li>
+                            <li><a href="#join" class="block text-white hover:underline bg-orange-500 bg-opacity-30 px-3 py-1 rounded-full border-2 border-orange-500 text-center">参加方法</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <script>
+                    function toggleMenu() {
+                        const menu = document.getElementById('mobile-menu');
+                        menu.classList.toggle('translate-x-full');
+                        
+                        // コンテンツが無効化されていますというメッセージを表示
+                        const message = document.createElement('div');
+                        message.textContent = 'Some content has been disabled in this document';
+                        message.style.position = 'fixed';
+                        message.style.bottom = '20px';
+                        message.style.left = '50%';
+                        message.style.transform = 'translateX(-50%)';
+                        message.style.backgroundColor = 'rgba(0,0,0,0.8)';
+                        message.style.color = 'white';
+                        message.style.padding = '10px 20px';
+                        message.style.borderRadius = '5px';
+                        document.body.appendChild(message);
+                        
+                        setTimeout(() => {
+                            message.remove();
+                        }, 3000);
+                    }
+                </script>
             </div>
         </div>
     </header>
